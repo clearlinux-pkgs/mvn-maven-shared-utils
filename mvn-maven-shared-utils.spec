@@ -4,7 +4,7 @@
 #
 Name     : mvn-maven-shared-utils
 Version  : 0.6
-Release  : 5
+Release  : 6
 URL      : https://repo1.maven.org/maven2/org/apache/maven/shared/maven-shared-utils/0.6/maven-shared-utils-0.6.jar
 Source0  : https://repo1.maven.org/maven2/org/apache/maven/shared/maven-shared-utils/0.6/maven-shared-utils-0.6.jar
 Source1  : https://repo1.maven.org/maven2/org/apache/maven/shared/maven-shared-utils/0.3/maven-shared-utils-0.3.jar
@@ -14,8 +14,10 @@ Source4  : https://repo1.maven.org/maven2/org/apache/maven/shared/maven-shared-u
 Source5  : https://repo1.maven.org/maven2/org/apache/maven/shared/maven-shared-utils/3.0.1/maven-shared-utils-3.0.1.pom
 Source6  : https://repo1.maven.org/maven2/org/apache/maven/shared/maven-shared-utils/3.1.0/maven-shared-utils-3.1.0.jar
 Source7  : https://repo1.maven.org/maven2/org/apache/maven/shared/maven-shared-utils/3.1.0/maven-shared-utils-3.1.0.pom
-Source8  : https://repo1.maven.org/maven2/org/apache/maven/shared/maven-shared-utils/3.2.1/maven-shared-utils-3.2.1.jar
-Source9  : https://repo1.maven.org/maven2/org/apache/maven/shared/maven-shared-utils/3.2.1/maven-shared-utils-3.2.1.pom
+Source8  : https://repo1.maven.org/maven2/org/apache/maven/shared/maven-shared-utils/3.2.0/maven-shared-utils-3.2.0.jar
+Source9  : https://repo1.maven.org/maven2/org/apache/maven/shared/maven-shared-utils/3.2.0/maven-shared-utils-3.2.0.pom
+Source10  : https://repo1.maven.org/maven2/org/apache/maven/shared/maven-shared-utils/3.2.1/maven-shared-utils-3.2.1.jar
+Source11  : https://repo1.maven.org/maven2/org/apache/maven/shared/maven-shared-utils/3.2.1/maven-shared-utils-3.2.1.pom
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : Apache-1.1 Apache-2.0
@@ -61,11 +63,17 @@ cp %{SOURCE6} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/shared
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/shared/maven-shared-utils/3.1.0
 cp %{SOURCE7} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/shared/maven-shared-utils/3.1.0
 
-mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/shared/maven-shared-utils/3.2.1
-cp %{SOURCE8} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/shared/maven-shared-utils/3.2.1
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/shared/maven-shared-utils/3.2.0
+cp %{SOURCE8} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/shared/maven-shared-utils/3.2.0
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/shared/maven-shared-utils/3.2.0
+cp %{SOURCE9} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/shared/maven-shared-utils/3.2.0
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/shared/maven-shared-utils/3.2.1
-cp %{SOURCE9} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/shared/maven-shared-utils/3.2.1
+cp %{SOURCE10} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/shared/maven-shared-utils/3.2.1
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/shared/maven-shared-utils/3.2.1
+cp %{SOURCE11} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/shared/maven-shared-utils/3.2.1
 
 
 %files
@@ -81,5 +89,7 @@ cp %{SOURCE9} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/shared
 /usr/share/java/.m2/repository/org/apache/maven/shared/maven-shared-utils/3.0.1/maven-shared-utils-3.0.1.pom
 /usr/share/java/.m2/repository/org/apache/maven/shared/maven-shared-utils/3.1.0/maven-shared-utils-3.1.0.jar
 /usr/share/java/.m2/repository/org/apache/maven/shared/maven-shared-utils/3.1.0/maven-shared-utils-3.1.0.pom
+/usr/share/java/.m2/repository/org/apache/maven/shared/maven-shared-utils/3.2.0/maven-shared-utils-3.2.0.jar
+/usr/share/java/.m2/repository/org/apache/maven/shared/maven-shared-utils/3.2.0/maven-shared-utils-3.2.0.pom
 /usr/share/java/.m2/repository/org/apache/maven/shared/maven-shared-utils/3.2.1/maven-shared-utils-3.2.1.jar
 /usr/share/java/.m2/repository/org/apache/maven/shared/maven-shared-utils/3.2.1/maven-shared-utils-3.2.1.pom
