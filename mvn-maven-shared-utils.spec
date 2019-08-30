@@ -4,7 +4,7 @@
 #
 Name     : mvn-maven-shared-utils
 Version  : 0.6
-Release  : 9
+Release  : 10
 URL      : https://repo1.maven.org/maven2/org/apache/maven/shared/maven-shared-utils/0.6/maven-shared-utils-0.6.jar
 Source0  : https://repo1.maven.org/maven2/org/apache/maven/shared/maven-shared-utils/0.6/maven-shared-utils-0.6.jar
 Source1  : https://repo1.maven.org/maven2/org/apache/maven/shared/maven-shared-utils/0.1/maven-shared-utils-0.1.jar
