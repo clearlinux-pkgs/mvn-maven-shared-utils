@@ -4,7 +4,7 @@
 #
 Name     : mvn-maven-shared-utils
 Version  : 0.6
-Release  : 10
+Release  : 11
 URL      : https://repo1.maven.org/maven2/org/apache/maven/shared/maven-shared-utils/0.6/maven-shared-utils-0.6.jar
 Source0  : https://repo1.maven.org/maven2/org/apache/maven/shared/maven-shared-utils/0.6/maven-shared-utils-0.6.jar
 Source1  : https://repo1.maven.org/maven2/org/apache/maven/shared/maven-shared-utils/0.1/maven-shared-utils-0.1.jar
@@ -13,19 +13,21 @@ Source3  : https://repo1.maven.org/maven2/org/apache/maven/shared/maven-shared-u
 Source4  : https://repo1.maven.org/maven2/org/apache/maven/shared/maven-shared-utils/0.3/maven-shared-utils-0.3.pom
 Source5  : https://repo1.maven.org/maven2/org/apache/maven/shared/maven-shared-utils/0.4/maven-shared-utils-0.4.jar
 Source6  : https://repo1.maven.org/maven2/org/apache/maven/shared/maven-shared-utils/0.4/maven-shared-utils-0.4.pom
-Source7  : https://repo1.maven.org/maven2/org/apache/maven/shared/maven-shared-utils/0.6/maven-shared-utils-0.6.pom
-Source8  : https://repo1.maven.org/maven2/org/apache/maven/shared/maven-shared-utils/0.7/maven-shared-utils-0.7.jar
-Source9  : https://repo1.maven.org/maven2/org/apache/maven/shared/maven-shared-utils/0.7/maven-shared-utils-0.7.pom
-Source10  : https://repo1.maven.org/maven2/org/apache/maven/shared/maven-shared-utils/3.0.0/maven-shared-utils-3.0.0.jar
-Source11  : https://repo1.maven.org/maven2/org/apache/maven/shared/maven-shared-utils/3.0.0/maven-shared-utils-3.0.0.pom
-Source12  : https://repo1.maven.org/maven2/org/apache/maven/shared/maven-shared-utils/3.0.1/maven-shared-utils-3.0.1.jar
-Source13  : https://repo1.maven.org/maven2/org/apache/maven/shared/maven-shared-utils/3.0.1/maven-shared-utils-3.0.1.pom
-Source14  : https://repo1.maven.org/maven2/org/apache/maven/shared/maven-shared-utils/3.1.0/maven-shared-utils-3.1.0.jar
-Source15  : https://repo1.maven.org/maven2/org/apache/maven/shared/maven-shared-utils/3.1.0/maven-shared-utils-3.1.0.pom
-Source16  : https://repo1.maven.org/maven2/org/apache/maven/shared/maven-shared-utils/3.2.0/maven-shared-utils-3.2.0.jar
-Source17  : https://repo1.maven.org/maven2/org/apache/maven/shared/maven-shared-utils/3.2.0/maven-shared-utils-3.2.0.pom
-Source18  : https://repo1.maven.org/maven2/org/apache/maven/shared/maven-shared-utils/3.2.1/maven-shared-utils-3.2.1.jar
-Source19  : https://repo1.maven.org/maven2/org/apache/maven/shared/maven-shared-utils/3.2.1/maven-shared-utils-3.2.1.pom
+Source7  : https://repo1.maven.org/maven2/org/apache/maven/shared/maven-shared-utils/0.5/maven-shared-utils-0.5.jar
+Source8  : https://repo1.maven.org/maven2/org/apache/maven/shared/maven-shared-utils/0.5/maven-shared-utils-0.5.pom
+Source9  : https://repo1.maven.org/maven2/org/apache/maven/shared/maven-shared-utils/0.6/maven-shared-utils-0.6.pom
+Source10  : https://repo1.maven.org/maven2/org/apache/maven/shared/maven-shared-utils/0.7/maven-shared-utils-0.7.jar
+Source11  : https://repo1.maven.org/maven2/org/apache/maven/shared/maven-shared-utils/0.7/maven-shared-utils-0.7.pom
+Source12  : https://repo1.maven.org/maven2/org/apache/maven/shared/maven-shared-utils/3.0.0/maven-shared-utils-3.0.0.jar
+Source13  : https://repo1.maven.org/maven2/org/apache/maven/shared/maven-shared-utils/3.0.0/maven-shared-utils-3.0.0.pom
+Source14  : https://repo1.maven.org/maven2/org/apache/maven/shared/maven-shared-utils/3.0.1/maven-shared-utils-3.0.1.jar
+Source15  : https://repo1.maven.org/maven2/org/apache/maven/shared/maven-shared-utils/3.0.1/maven-shared-utils-3.0.1.pom
+Source16  : https://repo1.maven.org/maven2/org/apache/maven/shared/maven-shared-utils/3.1.0/maven-shared-utils-3.1.0.jar
+Source17  : https://repo1.maven.org/maven2/org/apache/maven/shared/maven-shared-utils/3.1.0/maven-shared-utils-3.1.0.pom
+Source18  : https://repo1.maven.org/maven2/org/apache/maven/shared/maven-shared-utils/3.2.0/maven-shared-utils-3.2.0.jar
+Source19  : https://repo1.maven.org/maven2/org/apache/maven/shared/maven-shared-utils/3.2.0/maven-shared-utils-3.2.0.pom
+Source20  : https://repo1.maven.org/maven2/org/apache/maven/shared/maven-shared-utils/3.2.1/maven-shared-utils-3.2.1.jar
+Source21  : https://repo1.maven.org/maven2/org/apache/maven/shared/maven-shared-utils/3.2.1/maven-shared-utils-3.2.1.pom
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : Apache-1.1 Apache-2.0
@@ -84,44 +86,50 @@ cp %{SOURCE5} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/shared
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/shared/maven-shared-utils/0.4
 cp %{SOURCE6} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/shared/maven-shared-utils/0.4/maven-shared-utils-0.4.pom
 
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/shared/maven-shared-utils/0.5
+cp %{SOURCE7} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/shared/maven-shared-utils/0.5/maven-shared-utils-0.5.jar
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/shared/maven-shared-utils/0.5
+cp %{SOURCE8} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/shared/maven-shared-utils/0.5/maven-shared-utils-0.5.pom
+
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/shared/maven-shared-utils/0.6
-cp %{SOURCE7} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/shared/maven-shared-utils/0.6/maven-shared-utils-0.6.pom
+cp %{SOURCE9} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/shared/maven-shared-utils/0.6/maven-shared-utils-0.6.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/shared/maven-shared-utils/0.7
-cp %{SOURCE8} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/shared/maven-shared-utils/0.7/maven-shared-utils-0.7.jar
+cp %{SOURCE10} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/shared/maven-shared-utils/0.7/maven-shared-utils-0.7.jar
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/shared/maven-shared-utils/0.7
-cp %{SOURCE9} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/shared/maven-shared-utils/0.7/maven-shared-utils-0.7.pom
+cp %{SOURCE11} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/shared/maven-shared-utils/0.7/maven-shared-utils-0.7.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/shared/maven-shared-utils/3.0.0
-cp %{SOURCE10} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/shared/maven-shared-utils/3.0.0/maven-shared-utils-3.0.0.jar
+cp %{SOURCE12} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/shared/maven-shared-utils/3.0.0/maven-shared-utils-3.0.0.jar
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/shared/maven-shared-utils/3.0.0
-cp %{SOURCE11} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/shared/maven-shared-utils/3.0.0/maven-shared-utils-3.0.0.pom
+cp %{SOURCE13} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/shared/maven-shared-utils/3.0.0/maven-shared-utils-3.0.0.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/shared/maven-shared-utils/3.0.1
-cp %{SOURCE12} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/shared/maven-shared-utils/3.0.1/maven-shared-utils-3.0.1.jar
+cp %{SOURCE14} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/shared/maven-shared-utils/3.0.1/maven-shared-utils-3.0.1.jar
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/shared/maven-shared-utils/3.0.1
-cp %{SOURCE13} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/shared/maven-shared-utils/3.0.1/maven-shared-utils-3.0.1.pom
+cp %{SOURCE15} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/shared/maven-shared-utils/3.0.1/maven-shared-utils-3.0.1.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/shared/maven-shared-utils/3.1.0
-cp %{SOURCE14} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/shared/maven-shared-utils/3.1.0/maven-shared-utils-3.1.0.jar
+cp %{SOURCE16} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/shared/maven-shared-utils/3.1.0/maven-shared-utils-3.1.0.jar
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/shared/maven-shared-utils/3.1.0
-cp %{SOURCE15} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/shared/maven-shared-utils/3.1.0/maven-shared-utils-3.1.0.pom
+cp %{SOURCE17} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/shared/maven-shared-utils/3.1.0/maven-shared-utils-3.1.0.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/shared/maven-shared-utils/3.2.0
-cp %{SOURCE16} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/shared/maven-shared-utils/3.2.0/maven-shared-utils-3.2.0.jar
+cp %{SOURCE18} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/shared/maven-shared-utils/3.2.0/maven-shared-utils-3.2.0.jar
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/shared/maven-shared-utils/3.2.0
-cp %{SOURCE17} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/shared/maven-shared-utils/3.2.0/maven-shared-utils-3.2.0.pom
+cp %{SOURCE19} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/shared/maven-shared-utils/3.2.0/maven-shared-utils-3.2.0.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/shared/maven-shared-utils/3.2.1
-cp %{SOURCE18} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/shared/maven-shared-utils/3.2.1/maven-shared-utils-3.2.1.jar
+cp %{SOURCE20} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/shared/maven-shared-utils/3.2.1/maven-shared-utils-3.2.1.jar
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/shared/maven-shared-utils/3.2.1
-cp %{SOURCE19} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/shared/maven-shared-utils/3.2.1/maven-shared-utils-3.2.1.pom
+cp %{SOURCE21} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/shared/maven-shared-utils/3.2.1/maven-shared-utils-3.2.1.pom
 
 
 %files
@@ -135,6 +143,8 @@ cp %{SOURCE19} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/share
 /usr/share/java/.m2/repository/org/apache/maven/shared/maven-shared-utils/0.3/maven-shared-utils-0.3.pom
 /usr/share/java/.m2/repository/org/apache/maven/shared/maven-shared-utils/0.4/maven-shared-utils-0.4.jar
 /usr/share/java/.m2/repository/org/apache/maven/shared/maven-shared-utils/0.4/maven-shared-utils-0.4.pom
+/usr/share/java/.m2/repository/org/apache/maven/shared/maven-shared-utils/0.5/maven-shared-utils-0.5.jar
+/usr/share/java/.m2/repository/org/apache/maven/shared/maven-shared-utils/0.5/maven-shared-utils-0.5.pom
 /usr/share/java/.m2/repository/org/apache/maven/shared/maven-shared-utils/0.6/maven-shared-utils-0.6.jar
 /usr/share/java/.m2/repository/org/apache/maven/shared/maven-shared-utils/0.6/maven-shared-utils-0.6.pom
 /usr/share/java/.m2/repository/org/apache/maven/shared/maven-shared-utils/0.7/maven-shared-utils-0.7.jar
